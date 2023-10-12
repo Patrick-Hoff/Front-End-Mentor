@@ -1,0 +1,353 @@
+@import url('https://fonts.googleapis.com/css2? family= Open+Sans:wght@500 & family= Roboto & family= Young+Serif & display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    height: 90px;
+    background: #fbfbfb;
+}
+
+.material-symbols-outlined {
+    position: absolute;
+    right: 3%;
+    font-size: 3.3rem;
+    top: 5px;
+    cursor: pointer;
+}
+
+.logo {
+    margin-left: 20px;
+    margin-top: 10px;
+}
+
+#close {
+    display: none;
+}
+
+nav ul {
+    visibility: hidden;
+    overflow: hidden;
+    transition: .7s;
+    background: black;
+    height: calc(100vh - 90px) !important;
+    width: 0;
+    position: absolute;
+    right: 0;
+    background: #fbfbfb;
+    display: flex;
+    flex-direction: column;
+}
+
+nav.active ul {
+    visibility: visible;
+    width: 70%;
+}
+
+nav ul li {
+    margin-left: 50px;
+    list-style: none;
+    margin-top: 30px;
+    font-size: 1.4rem;
+}
+
+nav ul li a {
+    font-style: none;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    color: black;
+}
+
+main {
+    font-family: "roboto", sans-serif;
+}
+
+main p{
+    line-height: 26px;
+    font-size: 1.2rem;
+}
+
+#imgMobile {
+    display: block;
+}
+
+#imgDesktop {
+    display: none;
+}
+
+.mobileImg {
+    display: flex;
+    justify-content: center;
+    height: auto;
+    flex-wrap: wrap;
+}
+
+.title {
+    margin-top: 15px;
+    font-size: 3rem;
+    margin-left: 20px;
+    width: 100%;
+    padding: 0 30px 0 30px;
+}
+
+.text {
+    padding: 0 25px 0 25px;
+    color: #666;
+    font-family: "roboto", sans-serif;
+    margin-top: 25px;
+}
+
+.read div {
+    margin-top: 50px;
+}
+
+.divRead {
+    height: 56px;
+    width: 100%;
+    display: flex;
+    align-items: left;
+    margin-left: 22px;
+    margin-top: 20px;
+}
+
+.read {
+    background: #d44a3b;
+    width: 200px;
+    height: 56px;
+    align-items: left;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "roboto", sans-serif;
+    line-break: 20px;
+    letter-spacing: 6px;
+    font-weight: bold;
+}
+
+.containerBlue {
+    background: #010326;
+    color: white;
+    font-family: "roboto", sans-serif;
+    width: 90%;
+    padding: 20px;
+    letter-spacing: 2px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.containerBlue h2 {
+    color: #F29E38;
+    margin:10px 0 0 0px;
+    font-size: 3rem;
+}
+
+.containerBlue div {
+    padding: 0px 0px 35px 0px;
+    line-height: 25px;
+}
+
+.containerBlue h3 {
+    padding: 30px 0 20px 0;
+    font-weight: bold;
+    font-size: 1.4rem;
+}
+
+#divOne, #divTwo {
+    border-bottom: 0.5px solid white;
+}
+
+.laptops {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+.retroPcs {
+    width: 90%;
+    margin-top: 35px;
+}
+
+.retroPcs img {
+    width: 44%;
+    float: left;
+}
+
+.laptops h3 {
+    font-size: 1.4rem;
+    margin-top: 15px;
+}
+
+.laptops div {
+    position: absolute;
+    left: 48%;
+}
+
+.laptops span {
+    font-size: 3rem;
+    font-family: "roboto", sans-serif;
+    color: #666;
+    font-weight: bold;
+}
+
+
+
+
+
+@media(min-width: 900px) {
+
+.material-symbols-outlined {
+    display: none;
+}
+
+nav {
+    width: 50%;
+    margin-right: 180px;
+}
+
+
+nav ul{
+    height: 90px !important;
+    width: 100%;
+    padding: 0;
+    visibility: visible;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+nav.active ul {
+    height: 90px !important;
+    width: 100%;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0;
+    padding: 0;
+    height: 0;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.logo {
+    margin-left: 150px;
+}
+
+
+#imgDesktop {
+    display: block;
+}
+
+#imgMobile {
+    display: none;
+}
+
+.mobileImg {
+    width: 55%;
+    height: auto;
+    margin-top: 15px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.imgDesktop {
+    width: 100%;
+}
+
+.container {
+    width: 45%;
+    margin: 0;
+    margin-top: 15px;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.title {
+    width: 50%;
+    margin: 30px 0 0 0;
+}
+
+.text {
+    width: 50%;
+    margin: 30px 0 0 0;
+    text-align: justify;
+    height: 0 auto
+}
+
+.divRead {
+    width: auto;
+    margin: 0;
+}
+
+.read {
+    user-select: none;
+    cursor: pointer;
+    transition: .2s ease;
+}
+
+.read:hover {
+    background: #010326;
+}
+
+.containerBlue h2 {
+    margin-top: 0;
+}
+
+.containerBlue {
+    height: 550px;
+    display: flex;
+    flex-direction: column;
+}
+
+.containerBlue h3 {
+    transition: .2s ease-in;
+    cursor: pointer;
+}
+
+.containerBlue h3:hover {
+    color: #F29E38;
+}
+
+.laptops {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 50px;
+}
+
+.retroPcs div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    position: relative;
+    right: 0;
+    left: 0;
+    padding: 10px;
+}
+
+.retroPcs p {
+    margin-top: 5px;
+}
+
+}
